@@ -5,17 +5,17 @@ The EMS Application is a Hospital Management System developed as a part of our t
 
 # Folder Structure
 
-There are 2 folders in the application. 
-**ems** - This holds all the Frontend for the application.
+There are 2 folders in the application.<br>
+**ems** - This holds all the Frontend for the application.<br>
 **api** - This holds all the backend code for the application.
 
 ## ems Folder Structure
 
-<img src="readme-assets/emsfs.png" />
+<img src="readme-assets/emsfs.png">
 
 ## api Folder Structure
 
-<img src="readme-assets/emsfs.png" />
+<img src="readme-assets/apifs.png">
 
 # Application Frontend
 The frontend of the application was built purely on AngularJS with the Material UI library for Angular. You can register/login, create and view doctors and their departments, create and view appointments.
