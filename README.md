@@ -11,11 +11,11 @@ There are 2 folders in the application.
 
 ## ems Folder Structure
 
-<img src="readme-assets/emsfs" />
+<img src="readme-assets/emsfs.png" />
 
 ## api Folder Structure
 
-<img src="readme-assets/emsfs" />
+<img src="readme-assets/emsfs.png" />
 
 # Application Frontend
 The frontend of the application was built purely on AngularJS with the Material UI library for Angular. You can register/login, create and view doctors and their departments, create and view appointments.
