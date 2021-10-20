@@ -1,0 +1,22 @@
+table {
+    width: 95%;
+    margin-left:2.5%;
+    border: solid deepskyblue;
+}
+  
+tr:nth-child(even){background-color:lightcyan;}
+
+tr:hover {background-color: palegreen;}
+  
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:dodgerblue;
+    color: white;
+}
+  
+::ng-deep .mat-tab-group.mat-primary .mat-ink-bar {
+    background-color:rgb(69, 218, 69) !important;
+    border: 3px solid rgb(69, 218, 69);
+}

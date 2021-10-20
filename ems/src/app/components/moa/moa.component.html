@@ -1,0 +1,31 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="box">
+      <mat-card-header>
+        <mat-card-title>Make an Appointment</mat-card-title>
+      </mat-card-header>
+      <form [formGroup]='appForm' (ngSubmit)="onSubmit()" class="example-form">
+        <mat-card-content>
+          <mat-form-field class="example-full-width">
+            <input type="text" formControlName="fullname" matInput placeholder="Patient Name" required>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <input type="date" formControlName="date" matInput placeholder="Date of Appointment" required>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <input type="time" formControlName="time" matInput placeholder="Time of Appointment" required>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>Choose the Consulting Department</mat-label>
+            <mat-select formControlName="consDept" required>
+              <mat-option [value]="dept" *ngFor="let dept of Depts">{{dept}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <input type="number" formControlName="mobileNo" matInput placeholder="Mobile Number" required>
+          </mat-form-field>
+        </mat-card-content>
+        <button mat-stroked-button color="accent" class="btn-block">Create</button>
+      </form>
+    </mat-card>
+</div>

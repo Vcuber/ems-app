@@ -1,0 +1,246 @@
+<br><br><br><br>
+<mat-tab-group >
+    <mat-tab label="Cardiology" >
+        <br><br><br>
+        <table mat-table [dataSource]="cardiodataSource" class="mat-elevation-z8">
+            <ng-container matColumnDef="docId">
+              <th mat-header-cell *matHeaderCellDef> Doctor ID </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docId}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docName">
+              <th mat-header-cell *matHeaderCellDef> Doctor Name </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docName}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docEmail">
+              <th mat-header-cell *matHeaderCellDef> Doctor's Email </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docEmail}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docPh">
+              <th mat-header-cell *matHeaderCellDef> Doctor's Mobile No: </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docPh}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docDept">
+              <th mat-header-cell *matHeaderCellDef> Department </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docDept}} </td>
+            </ng-container> 
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </mat-tab>
+    <mat-tab label="Oncology">
+        <br><br><br>
+        <table mat-table [dataSource]="oncodataSource" class="mat-elevation-z8">
+            <ng-container matColumnDef="docId">
+              <th mat-header-cell *matHeaderCellDef> Doctor ID </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docId}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docName">
+              <th mat-header-cell *matHeaderCellDef> Doctor Name </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docName}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docEmail">
+              <th mat-header-cell *matHeaderCellDef> Doctor's Email </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docEmail}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docPh">
+              <th mat-header-cell *matHeaderCellDef> Doctor's Mobile No: </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docPh}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docDept">
+              <th mat-header-cell *matHeaderCellDef> Department </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docDept}} </td>
+            </ng-container> 
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </mat-tab>
+    <mat-tab label="Paediatrics">
+        <br><br><br>
+        <table mat-table [dataSource]="paeddataSource" class="mat-elevation-z8">
+            <ng-container matColumnDef="docId">
+              <th mat-header-cell *matHeaderCellDef> Doctor ID </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docId}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docName">
+              <th mat-header-cell *matHeaderCellDef> Doctor Name </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docName}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docEmail">
+              <th mat-header-cell *matHeaderCellDef> Doctor's Email </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docEmail}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docPh">
+              <th mat-header-cell *matHeaderCellDef> Doctor's Mobile No: </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docPh}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docDept">
+              <th mat-header-cell *matHeaderCellDef> Department </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docDept}} </td>
+            </ng-container> 
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </mat-tab>
+    <mat-tab label="Orthopaedics">
+        <br><br><br>
+        <table mat-table [dataSource]="orthodataSource" class="mat-elevation-z8">
+            <ng-container matColumnDef="docId">
+              <th mat-header-cell *matHeaderCellDef> Doctor ID </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docId}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docName">
+              <th mat-header-cell *matHeaderCellDef> Doctor Name </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docName}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docEmail">
+              <th mat-header-cell *matHeaderCellDef> Doctor's Email </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docEmail}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docPh">
+              <th mat-header-cell *matHeaderCellDef> Doctor's Mobile No: </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docPh}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docDept">
+              <th mat-header-cell *matHeaderCellDef> Department </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docDept}} </td>
+            </ng-container> 
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </mat-tab>
+    <mat-tab label="ENT">
+        <br><br><br>
+        <table mat-table [dataSource]="entdataSource" class="mat-elevation-z8">
+            <ng-container matColumnDef="docId">
+              <th mat-header-cell *matHeaderCellDef> Doctor ID </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docId}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docName">
+              <th mat-header-cell *matHeaderCellDef> Doctor Name </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docName}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docEmail">
+              <th mat-header-cell *matHeaderCellDef> Doctor's Email </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docEmail}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docPh">
+              <th mat-header-cell *matHeaderCellDef> Doctor's Mobile No: </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docPh}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docDept">
+              <th mat-header-cell *matHeaderCellDef> Department </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docDept}} </td>
+            </ng-container> 
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </mat-tab>
+    <mat-tab label="Obsterics/Gynaecology">
+        <br><br><br>
+        <table mat-table [dataSource]="ogdataSource" class="mat-elevation-z8">
+            <ng-container matColumnDef="docId">
+              <th mat-header-cell *matHeaderCellDef> Doctor ID </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docId}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docName">
+              <th mat-header-cell *matHeaderCellDef> Doctor Name </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docName}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docEmail">
+              <th mat-header-cell *matHeaderCellDef> Doctor's Email </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docEmail}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docPh">
+              <th mat-header-cell *matHeaderCellDef> Doctor's Mobile No: </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docPh}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docDept">
+              <th mat-header-cell *matHeaderCellDef> Department </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docDept}} </td>
+            </ng-container> 
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </mat-tab>
+    <mat-tab label="Neurology">
+        <br><br><br>
+        <table mat-table [dataSource]="neurodataSource" class="mat-elevation-z8">
+            <ng-container matColumnDef="docId">
+              <th mat-header-cell *matHeaderCellDef> Doctor ID </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docId}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docName">
+              <th mat-header-cell *matHeaderCellDef> Doctor Name </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docName}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docEmail">
+              <th mat-header-cell *matHeaderCellDef> Doctor's Email </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docEmail}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docPh">
+              <th mat-header-cell *matHeaderCellDef> Doctor's Mobile No: </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docPh}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docDept">
+              <th mat-header-cell *matHeaderCellDef> Department </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docDept}} </td>
+            </ng-container> 
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </mat-tab>
+    <mat-tab label="Nephrology">
+        <br><br><br>
+        <table mat-table [dataSource]="nephrodataSource" class="mat-elevation-z8">
+            <ng-container matColumnDef="docId">
+              <th mat-header-cell *matHeaderCellDef> Doctor ID </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docId}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docName">
+              <th mat-header-cell *matHeaderCellDef> Doctor Name </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docName}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docEmail">
+              <th mat-header-cell *matHeaderCellDef> Doctor's Email </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docEmail}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docPh">
+              <th mat-header-cell *matHeaderCellDef> Doctor's Mobile No: </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docPh}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docDept">
+              <th mat-header-cell *matHeaderCellDef> Department </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docDept}} </td>
+            </ng-container> 
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </mat-tab>
+    <mat-tab label="Opthamology">
+        <br><br><br>
+        <table mat-table [dataSource]="opthadataSource" class="mat-elevation-z8">
+            <ng-container matColumnDef="docId">
+              <th mat-header-cell *matHeaderCellDef> Doctor ID </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docId}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docName">
+              <th mat-header-cell *matHeaderCellDef> Doctor Name </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docName}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docEmail">
+              <th mat-header-cell *matHeaderCellDef> Doctor's Email </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docEmail}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docPh">
+              <th mat-header-cell *matHeaderCellDef> Doctor's Mobile No: </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docPh}} </td>
+            </ng-container>
+            <ng-container matColumnDef="docDept">
+              <th mat-header-cell *matHeaderCellDef> Department </th>
+              <td mat-cell *matCellDef="let doctors"> {{doctors.docDept}} </td>
+            </ng-container> 
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </mat-tab>
+</mat-tab-group>
